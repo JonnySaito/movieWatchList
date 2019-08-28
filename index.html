@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Movie Watch List</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Movie Watch List</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 id="heading">Add a new movie</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form id="addMovie">
+                        <div class="form-group">
+                            <label for="movieName">Title</label>
+                            <input type="text" name="movieName" class="form-control" value="" id="movieName">
+                        </div>
+                        <div class="form-group">
+                            <label for="movieDirector">Director</label>
+                            <input type="text" name="movieDirector" class="form-control" value="" id="movieDirector">
+                        </div>
+                        <div class="form-group">
+                            <label for="movieGenre">Genre</label>
+                            <input type="text" name="movieGenre" class="form-control" value="" id="movieGenre">
+                        </div>
+                        <div class="form-group">
+                            <label for="movieYear">Year</label>
+                            <input type="number" name="movieYear" class="form-control" value="" id="movieYear">
+                        </div>
+                        <input type="hidden" id="movieID">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-secondary" name="button" id="addMovieButton">Add a movie</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Movies to watch</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul id="movieList" class="list-group">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js" charset="utf-8"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="js/script.js" charset="utf-8"></script>
+    </body>
+</html>
